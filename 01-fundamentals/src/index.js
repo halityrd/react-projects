@@ -5,5 +5,9 @@ function Greeting() {
   return <h2>My First Component</h2>;
 }
 
-const root = ReactDOM(document.getElementById('root'));
+// function Greeting () {
+//   return React.createElement('h2', {}, 'hello world');
+// };
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Greeting />);
