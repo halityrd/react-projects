@@ -23,10 +23,12 @@ const Book = () => {
   );
 };
 
-const Image = () => <h2>image placeholder</h2>;
-const Title = () => <h2>Title of the Book</h2>;
+const Image = () => (
+  <img src="./images/book-1.jpg" alt="Interesting Facts For Curious Minds" />
+);
+const Title = () => <h2>Interesting Facts For Curious Minds</h2>;
 const Author = () => {
-  return <h4>Author</h4>;
+  return <h4>Jordan Moore</h4>;
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
