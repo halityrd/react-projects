@@ -13,34 +13,22 @@ const BookList = () => {
   );
 };
 
+const author = 'Jordan Moore';
+
 const Book = () => {
+  const title = 'Interesting Facts For Curious Minds';
   return (
     <article className="book">
-      <Image />
-      <Title />
-      <Author />
+      <img
+        src="./images/book-1.jpg"
+        alt="Interesting Facts For Curious Minds"
+      />
+      <h2>{title}</h2>
+      <h4>{author.toUpperCase()}</h4>
+      {/* <p>{let x = 6}</p> */}
+      <p>{6 + 6}</p>
     </article>
   );
-};
-
-const Image = () => (
-  <img src="./images/book-1.jpg" alt="Interesting Facts For Curious Minds" />
-);
-const Title = () => <h2>Interesting Facts For Curious Minds</h2>;
-const Author = () => {
-  const inlineHeadingStyles = {
-    color: '#617d98',
-    fontSize: '0.75rem',
-    marginTop: '0.5rem',
-  };
-
-  return <h4 style={inlineHeadingStyles}>Jordan Moore</h4>;
-
-  // return (
-  //   <h4 style={{ color: '#617d98', fontSize: '0.75rem', marginTop: '0.5rem' }}>
-  //     Jordan Moore
-  //   </h4>
-  // );
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
