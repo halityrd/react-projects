@@ -15,26 +15,20 @@ const secondBook = {
   img: './images/book-2.jpg',
 };
 
+const names = ['john', 'peter', 'susan'];
+const newNames = names.map((name) => {
+  return <h1>{name}</h1>;
+});
+
+console.log(newNames);
+
 const BookList = () => {
+  // return <section className="booklist">{newNames}</section>;
   return (
     <section className="booklist">
-      <Book
-        author={firstBook.author}
-        title={firstBook.title}
-        img={firstBook.img}
-      >
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, animi at
-          delectus nostrum ipsum qui laudantium odio sint labore excepturi
-          laborum, autem totam natus explicabo expedita dolores incidunt esse!
-          Quod.
-        </p>
-      </Book>
-      <Book
-        author={secondBook.author}
-        title={secondBook.title}
-        img={secondBook.img}
-      />
+      {names.map((name) => {
+        return <h1>{name}</h1>;
+      })}
     </section>
   );
 };
