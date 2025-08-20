@@ -1,19 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-function Greeting() {
+const BookList = () => {
   return (
-    <div>
-      <Person />
-      <Message />
-    </div>
+    <section>
+      <Book />
+      <Book />
+      <Book />
+    </section>
   );
-}
+};
 
-const Person = () => <h2>john doe</h2>;
-const Message = () => {
-  return <p>this is my message</p>;
+const Book = () => {
+  return (
+    <article>
+      <Image />
+      <Title />
+      <Author />
+    </article>
+  );
+};
+
+const Image = () => <h2>image placeholder</h2>;
+const Title = () => <h2>Title of the Book</h2>;
+const Author = () => {
+  return <h4>Author</h4>;
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Greeting />);
+root.render(<BookList />);
