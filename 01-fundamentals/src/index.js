@@ -55,8 +55,11 @@ const EventExamples = () => {
           style={{ margin: '1rem 0' }}
           onChange={handleFormInput}
         />
+        <button type="submit">click me</button>
       </form>
-      <button onClick={handleButonClick}>click me</button>
+      <button onClick={handleButonClick} type="button">
+        click me
+      </button>
     </section>
   );
 };
