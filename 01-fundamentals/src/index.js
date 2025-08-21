@@ -28,6 +28,31 @@ const BookList = () => {
   );
 };
 
+const EventExamples = () => {
+  const handleFormInput = () => {
+    console.log('handle form input');
+  };
+
+  const handleButonClick = () => {
+    alert('handle button click');
+  };
+
+  return (
+    <section>
+      <form>
+        <h2>Typical Form</h2>
+        <input
+          type="text"
+          name="example"
+          style={{ margin: '1rem 0' }}
+          onChange={handleFormInput}
+        />
+      </form>
+      <button onClick={handleButonClick}>click me</button>
+    </section>
+  );
+};
+
 const Book = (props) => {
   console.log(props);
   const { img, title, author } = props;
