@@ -30,7 +30,7 @@ const Navbar = () => {
             return (
               <li key={id}>
                 <a
-                  href="https://www.twitter.com"
+                  href={href}
                   target="_blank"
                   rel="noreferrer"
                   className="nav-icon"
